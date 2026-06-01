@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prince - Buoni Regalo</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div class="container">
+<h1>The Prince</h1>
+<h2>Gestione Buoni Regalo</h2>
+
+<section class="card">
+<h3>Nuovo Buono</h3>
+<input id="cliente" placeholder="Nome cliente">
+<input id="importo" type="number" placeholder="Importo €">
+<button onclick="creaBuono()">Crea Buono</button>
+</section>
+
+<section class="card">
+<h3>Verifica Buono</h3>
+<input id="codiceRicerca" placeholder="Codice Buono">
+<button onclick="verificaBuono()">Verifica</button>
+<button onclick="riscattaBuono()">Riscatta</button>
+<div id="risultato"></div>
+</section>
+</div>
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
